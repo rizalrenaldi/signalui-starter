@@ -1,0 +1,14 @@
+<nav class="w-full h-20">
+ <div class="container mx-auto px-4 h-full flex items-center justify-center md:justify-end">
+  <div class="w-auto">
+   <button x-show="!dark" x-on:click="dark = true"
+    class="text-sm font-semibold tracking-tight dark:text-white text-black">
+    Switch to dark mode &rarr;
+   </button>
+   <button x-show="dark" x-on:click="dark = false"
+    class="text-sm font-semibold tracking-tight dark:text-white text-black">
+    Switch to light mode &rarr;
+   </button>
+  </div>
+ </div>
+</nav>

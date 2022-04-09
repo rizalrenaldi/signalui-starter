@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{dark: true}" :class="dark ? 'dark bg-black': 'light bg-white'">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SignalUI Starter</title>
+  <meta name="description" content="">
+  <link rel="shortcut icon" href="./img/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Tailwind local version -->
+  <link rel="stylesheet" type="text/css" href="./css/main.css">
+  <!-- Tailwind CDN version — Not for production -->
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <!-- Alpine -->
+  <script src="https://unpkg.com/alpinejs@3.9.5/dist/cdn.min.js" defer></script>
+</head>
+
+<body class="antialiased bg-white dark:bg-black text-black dark:text-white">
+  <!-- debug overlay on bottom right corner to see which breakpoint your view at -->
+  <include src="./components/debug/debug.html"></include>
+
+  <div class="h-screen flex flex-col items-center justify-center relative overflow-hidden">
+
+    <include src="./components/gradient-bottom.html"></include>
+    <include src="./components/nav.html"></include>
+
+    <include src="./components/start.html"></include>
+
+    <include src="./components/footer.html"></include>
+  </div>
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>
